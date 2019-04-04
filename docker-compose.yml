@@ -281,6 +281,14 @@ selenium-hub:
   expose:
     - "4444"
 
+$your_webapp:
+  container_name: $your_webapp
+  restart: always
+  image: $docker_repo/$docker_image:$version
+  net: ${CUSTOM_NETWORK_NAME}
+  expose:
+    - "$port"
+   
 selenium-node-chrome:
   container_name: selenium-node-chrome
   restart: always
