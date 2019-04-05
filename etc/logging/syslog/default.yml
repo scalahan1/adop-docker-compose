@@ -15,13 +15,13 @@ ldap:
 gerrit-mysql:
   log_driver: "syslog"
   log_opt:
-    syslog-address: "udp://${LOGSTASH_HOST}:25826"
+    syslog-address: "udp://${LOGSTASH_HOST}:52000"
     tag: "gerrit-mysql"
 
 gerrit:
   log_driver: "syslog"
   log_opt:
-    syslog-address: "udp://${LOGSTASH_HOST}:25826"
+    syslog-address: "udp://${LOGSTASH_HOST}:52000"
     tag: "gerrit"
 
 sensu-uchiwa:
@@ -69,13 +69,13 @@ sonar-mysql:
 sonar:
   log_driver: "syslog"
   log_opt:
-    syslog-address: "udp://${LOGSTASH_HOST}:25826"
+    syslog-address: "udp://${LOGSTASH_HOST}:51000"
     tag: "sonar"
 
 jenkins:
   log_driver: "syslog"
   log_opt:
-    syslog-address: "udp://${LOGSTASH_HOST}:25826"
+    syslog-address: "udp://${LOGSTASH_HOST}:51000"
     tag: "jenkins"
 
 jenkins-slave:
